@@ -1,23 +1,55 @@
 import time
-text = "en sliskig hora"
+import random
+
+
+text1 = "A duck walked up to a lemonade stand"
+text2 = "And he said to the man, running the stand"
+text3 = "Hey, bum bum bum"
+text4 = "Got any grapes?"
+text5 = "The man said, NO"
+text6 = "Quack quack quack"
+text7 = "W coreography team ftw"
+text8 = "Dan the man my biggest fan"
+
+
 while True:
+    selector = random.randint(1, 8)
+
+    if selector == 1:
+        text = text1
+    elif selector == 2:
+        text = text2
+    elif selector == 3:
+        text = text3
+    elif selector == 4:
+        text = text4
+    elif selector == 5:
+        text = text5
+    elif selector == 6:
+        text = text6
+    elif selector == 7:
+        text = text7
+    elif selector == 8:
+        text = text8
+
     print(text)
-    print(input("Läs texten ovan och tryck på enter för att starta"))
+    print(input("Read the text and press enter to start"))
     before = time.time()
     usertext = input("")
     after = time.time()
     tid = after-before
     tid2 = str(round(tid, 2))
     if usertext == text:
-        print("\nDin tid är ", tid2, "s")
+        print("\nYour time is ", tid2, "s")
     else:
-        print("Du skrev fel din hora")
-    svar= input("Vill du prova igen?: ")
+        print("You dumb whore you fucked up")
+    svar= input("Wanna try again? (yes/no: ")
     nysvar = svar.lower()
-    if nysvar == "ja":
+    if nysvar == "yes":
+        print("")
         pass
-    elif nysvar == "nej":
+    elif nysvar == "no":
         break
     else:
-        print("mannen ja eller nej nästa gång ditt handikappppp")
+        print("dumb ass bitch it's yes or no")
         break
