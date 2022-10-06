@@ -1,0 +1,23 @@
+import time
+text = "en sliskig hora"
+while True:
+    print(text)
+    print(input("Läs texten ovan och tryck på enter för att starta"))
+    before = time.time()
+    usertext = input("")
+    after = time.time()
+    tid = after-before
+    tid2 = str(round(tid, 2))
+    if usertext == text:
+        print("\nDin tid är ", tid2, "s")
+    else:
+        print("Du skrev fel din hora")
+    svar= input("Vill du prova igen?: ")
+    nysvar = svar.lower()
+    if nysvar == "ja":
+        pass
+    elif nysvar == "nej":
+        break
+    else:
+        print("mannen ja eller nej nästa gång ditt handikappppp")
+        break
