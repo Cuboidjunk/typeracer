@@ -10,10 +10,12 @@ text5 = "The man said, NO"
 text6 = "Quack quack quack"
 text7 = "W coreography team ftw"
 text8 = "Dan the man my biggest fan"
+text9 = "Sigmund Freud is a hunky man"
+text10 = "AAGH HAAGH GAAH"
 
 
 while True:
-    selector = random.randint(1, 8)
+    selector = random.randint(1, 10)
 
     if selector == 1:
         text = text1
@@ -31,6 +33,10 @@ while True:
         text = text7
     elif selector == 8:
         text = text8
+    elif selector == 9:
+        text = text9
+    elif selector == 10:
+        text = text10
 
     print(text)
     print(input("Read the text and press enter to start"))
@@ -42,8 +48,8 @@ while True:
     if usertext == text:
         print("\nYour time is ", tid2, "s")
     else:
-        print("You dumb whore you fucked up")
-    svar= input("Wanna try again? (yes/no: ")
+        print("You fucked up")
+    svar= input("Wanna try again? (yes/no): ")
     nysvar = svar.lower()
     if nysvar == "yes":
         print("")
@@ -51,5 +57,5 @@ while True:
     elif nysvar == "no":
         break
     else:
-        print("dumb ass bitch it's yes or no")
+        print("it's yes or no")
         break
